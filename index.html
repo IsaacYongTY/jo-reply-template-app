@@ -12,10 +12,11 @@
     
 
     <select id="template-type">
-        <option id="template-choice-1" value="refund">Refund</option>
-        <option id="template-choice-2" value="itemShortage">Item shortage notice</option>
-        <option id="tenplate-choice-3" value="longWaitingTime">Long waiting time</option>
-        <option>Expiry date notice</option>
+        <option value="refund">Refund</option>
+        <option value="outOfStock1">OOS1</option>
+        <option value="outOfStock2">OOS2</option>
+        <option value="longWaitingTime">Long waiting time</option>
+        <option value="expiryDateNotice">Expiry date notice</option>
         <option>Delivery time notification</option>
 
     </select><br/><br/>
@@ -29,10 +30,14 @@
             <option>6</option>
     </select>
 
-    <input id="product-name" type="text" placeholder="Product name" value="test subject">
+    <input id="product-name" type="text" placeholder="Product name" value="">
     
-    <input id="eta" value = "no ETA">
+    <input id="date" placeholder="ETA/Expiry date" value = "">
    
+    <select id="optionAB">
+        <option>A</option>
+        <option>B</option>
+    </select>
 
     <button id="add-to-list">Add to list</button>
     <br/><br/>
@@ -41,7 +46,7 @@
 
     
 
-    Product overview:<br/>
+    Product preview:<br/>
     <textarea id="product-preview" cols="40" rows="20" placeholder="Product preview"></textarea>
 
     <textarea id="output" cols="100" rows="20"></textarea><br/>
