@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Jo Reply Template App</h1>
+    </body>
+
+    
+
+    <select id="template-type">
+        <option id="template-choice-1" value="refund">Refund</option>
+        <option id="template-choice-2" value="itemShortage">Item shortage notice</option>
+        <option id="tenplate-choice-3" value="longWaitingTime">Long waiting time</option>
+        <option>Expiry date notice</option>
+        <option>Delivery time notification</option>
+
+    </select><br/><br/>
+
+    <select id="quantity">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+    </select>
+
+    <input id="product-name" type="text" placeholder="Product name" value="test subject">
+    
+    <input id="eta" value = "no ETA">
+   
+
+    <button id="add-to-list">Add to list</button>
+    <br/><br/>
+    
+
+
+    
+
+    Product overview:<br/>
+    <textarea id="product-preview" cols="40" rows="20" placeholder="Product preview"></textarea>
+
+    <textarea id="output" cols="100" rows="20"></textarea><br/>
+    <button id="generate-template">Generate</button>
+    <button id="clear">Clear</button>
+
+    <div id="product-list">
+
+    </div>
+
+    <script src="jo-reply-template-app.js"></script>
+
+</html>
