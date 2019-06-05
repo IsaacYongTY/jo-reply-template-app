@@ -34,8 +34,10 @@ document.querySelector('#clear').addEventListener('click', function (e) {
 })
 
 document.querySelector('#product-preview').addEventListener('input', function (e) {
-
     generatedList = document.querySelector('#product-preview').value
 })
 
+document.querySelector("#copy").addEventListener('click', function (e) {
+    copy()
+})
 

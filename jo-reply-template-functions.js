@@ -59,3 +59,11 @@ const generateTemplate = function (templateType) {
         console.log('error')
     }
 }
+
+// Copy button
+const copy = function () {
+    let copyText = document.querySelector('#output')
+    copyText.select()
+    document.execCommand('copy')
+    "".select()
+}
