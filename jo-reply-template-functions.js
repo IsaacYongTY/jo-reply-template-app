@@ -65,5 +65,4 @@ const copy = function () {
     let copyText = document.querySelector('#output')
     copyText.select()
     document.execCommand('copy')
-    "".select()
 }
