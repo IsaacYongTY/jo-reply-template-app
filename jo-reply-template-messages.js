@@ -8,27 +8,26 @@ Thank you and have a good day!`
     outOfStock1: function (generatedList) {
         return `Hi, this is Jo from Nekojam. Thank you for shopping with us!\n\n\
 Your order is processed,\n\
-I would like to highlight the following item(s) are newly *out of stock*:\n\n\
+I would like to highlight the newly *out of stock* item(s) in your order:\n\n\
 ${generatedList}\n\
-Would you like to opt for a refund for the out of stock item(s) so that it doesnít hold up the fulfilment of your order?\n\
+Would you like to opt for a refund for the out of stock item(s) so that it doesn't hold up the fulfilment of your order?\n\n\
 If you would prefer to switch the order to something else, I can run a check with the supplier.\n\
-(However, if option for change order, do note that weíll most likely have to have the alternative\
-item ordered in which may take 1-3 working days to arrive! :))\n\n\
+(Note: change items may take 1-3 working days to fulfill! :))\n\n\
 Please let me know!`
     },
     outOfStock2: function (generatedList) {
         return `Hi, this is Jo from Nekojam. Thank you for shopping with us!\n\n\
 Your order is processed,\n
-I would like to highlight the following item(s) are newly *out of stock*:\n\n\
+Unfortunately we just have been informed by our supplier that the item(s) below is/are newly *out of stock* at the moment:\n\n\
 ${generatedList}\n\
-Are there other things you would like to swop to or would you prefer a refund for the unavailable items?\n
+Are there other things you would like to swap to or would you prefer a refund for the unavailable items?\n
 Please let me know!`
     },
     outOfStock3: function (generatedList) {
         return `Hey, Jo here. I regret to inform you that the\n\n\
 ${generatedList}\n\
 is/are unavailable at this point in time. \
-Are there other things you would like to swop to or would you prefer a refund for the unavailable items?`
+Are there other things you would like to swap to or would you prefer a refund for the unavailable items?`
     },
     outOfStockCancel: function (generatedList) {
         return `Hi, this is Jo from Nekojam. Thank you for shopping with us!\n\n\
@@ -46,10 +45,9 @@ Also, we will keep you updated if anything newly unavailable or need extra waiti
 (ie. If you were to order today, it'll be processed on the next working day.)`
     },
     refundedStripe: function () {
-        return `The refund has been carried out! :) \n\n\
-It's via Stripe back into your card, and it should show up on your credit statement immediately or within 1-3 working days. \
-We'll be in touch again once your order is good to go.\n\n\
-Thank you and have a good day!`
+        return `I've processed your refund, \
+and you should expect to see the amount re-appear in your bank account \
+in the next couple business days. Thank you and have a good day! :D `
     },
     itemShortageUponDelivery: function (generatedList) {
         return `Hi~ This is Jo from Nekojam. Your order will be delivered tonight 7-10pm.\n\n\
@@ -131,5 +129,14 @@ ${generatedList}\n\
 Would you mind to continue to keep the order?\n\
 Or if you would like to cancel or switch to something else?\n\n\
 Please let me know!`
+    },
+    outOfStockNoETA: function (generatedList) {
+        return `Hi, this is Jo from Nekojam. Thank you for shopping with us!\n\n\
+Unfortunately we just have been informed by our supplier that the item(s) below is newly *out of stock* at the moment:\n\n\
+${generatedList}\n\
+Because we cannot be sure at this time when, or if, we will be able to re-stock the item(s), \
+we have removed the item(s) from your order. The remainder of your order will be shipped and \
+you will not be charged for the cancelled item(s).\n\n\
+Please accept our apologies for this inconvenience. Thank you!`
     }
 }

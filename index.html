@@ -21,35 +21,24 @@
         <option value="deliveryTimeEnquiry">Delivery Time Enquiry</option>
         <option value="refundedStripe">Refund via Stripe</option>
         <option value="itemShortageUponDelivery">Item Shortage Upon Delivery > SPLIT ORDER</option>
-        <option value="longWaitingTimeSplit">Long Waiting Time > SPLIT delivery</option>
-        <option value="longWaitingTimeHold">Long Waiting Time > Hold Up</option>
+        <option value="longWaitingTimeSplit">Long Waiting Time > SPLIT delivery (1 item only)</option>
+        <option value="longWaitingTimeHold">Long Waiting Time > Hold Up (1 item only)</option>
         <option value="placeNewOrderAddOn">Place New Order for Add On Items Instead of Top Up</option>
         <option value="howToAddOnItem">How to Add On Items</option>
         <option value="topUpShippingFee">How to Top Up Shipping Fee</option>
-        <option value="offerDiscountDefect">Offer Discount for Defect Item</option>
+        <option value="offerDiscountDefect">Offer Discount for Defect Item (1 item only)</option>
         <option value="expiryDateNotice">Expiry date notice</option>
+        <option value="outOfStockNoETA">OOS No ETA</option>
     </select><br/><br/>
 
-    <select id="quantity">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-    </select>
+   
 
-    <input id="product-name" type="text" placeholder="Product name" value="">
+    <div id="input-section">
+       
+    </div>
     
-    <input id="date" placeholder="ETA/Expiry date" value = "no ETA">
-
-    <button id="add-to-list">Add to list</button>
     <br/><br/>
     
-
-
-    
-
     Product preview:<br/>
     <textarea id="product-preview" cols="40" rows="20" placeholder="Product preview"></textarea>
 
@@ -57,6 +46,7 @@
     <button id="generate-template">Generate</button>
     <button id="copy">Copy</button>
     <button id="clear">Clear</button>
+    <button id="clear-product">Clear Product</button>
 
     <div id="product-list">
 
