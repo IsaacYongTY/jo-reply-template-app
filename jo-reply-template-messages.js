@@ -1,10 +1,4 @@
 const templateMessage = {
-    refund: function () {
-        return `The refund has been carried out! :)\n\n\
-It's via Stripe back into your card, and should show up on your credit statement immediately or within 1-3 working days. \
-We'll be in touch again once your order is good to go.\n\n\
-Thank you and have a good day!`
-    },
     outOfStock1: function (generatedList) {
         return `Hi, this is Jo from Nekojam. Thank you for shopping with us!\n\n\
 Your order is processed,\n\
@@ -135,7 +129,7 @@ Please let me know!`
 Unfortunately we just have been informed by our supplier that the item(s) below is newly *out of stock* at the moment:\n\n\
 ${generatedList}\n\
 Because we cannot be sure at this time when, or if, we will be able to re-stock the item(s), \
-we have removed the item(s) from your order. The remainder of your order will be shipped and \
+we would like to remove the item(s) from your order. The remainder of your order will be shipped and \
 you will not be charged for the cancelled item(s).\n\n\
 Please accept our apologies for this inconvenience. Thank you!`
     }

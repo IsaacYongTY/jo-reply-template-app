@@ -1,10 +1,36 @@
+const isInputDOMRequired = function () {
 
+    if  (templateType === 'outOfStock1') {
+        generateInputDOM()
+    }   else if (templateType === 'outOfStock2') {
+        generateInputDOM()
+    }   else if (templateType === 'outOfStock3') {
+        generateInputDOM()
+    }   else if (templateType === 'outOfStockCancel') {
+        generateInputDOM()
+    }   else if (templateType === 'itemShortageUponDelivery') {
+        generateInputDOM()
+    }   else if (templateType === 'longWaitingTimeSplit') {
+        generateInputDOM()
+    }   else if (templateType === 'longWaitingTimeHold') {
+        generateInputDOM()
+    }   else if (templateType === 'offerDiscountDefect') {
+        generateInputDOM()
+    }   else if (templateType === 'expiryDateNotice') {
+        generateInputDOM()
+    }   else if (templateType === 'outOfStockNoETA') {
+        generateInputDOM()
+    }   else {
+        console.log('error')
+    }
+}
 
 const generateInputDOM = function () {
+
     let quantityEl = document.createElement('select')
     quantityEl.setAttribute('id', 'quantity')
     document.querySelector('#input-section').appendChild(quantityEl)
-
+    
     let optionEl = ''
 
     for (index = 1; index <= 6; index++) {
@@ -28,9 +54,16 @@ const generateInputDOM = function () {
     buttonEl.setAttribute('id', 'add-to-list')
     buttonEl.textContent = 'Add to list'
 
+    let pressEnterEl = document.createElement('span')
+    pressEnterEl.textContent = '<- or Press Enter'
+
     document.querySelector('#input-section').appendChild(productNameEl)
     document.querySelector('#input-section').appendChild(dateEl)
     document.querySelector('#input-section').appendChild(buttonEl)
+    document.querySelector('#input-section').appendChild(pressEnterEl)
+
+    console.log(document.querySelector('#input-section'))
+    
 
     document.querySelector('#add-to-list').addEventListener('click', function (e) {
         let quantity = document.querySelector('#quantity').value
@@ -38,6 +71,12 @@ const generateInputDOM = function () {
         let date = document.querySelector('#date').value
         generatedList = generateItemList(quantity, productName, date)
     })
+
+    document.addEventListener('keydown', function (e) {
+        if (e.code === 'Enter') {
+            document.querySelector('#add-to-list').focus()
+        }
+     })
 }
 
 // Generate Item List
@@ -67,33 +106,21 @@ const generateItemList = function(quantity, productName, date) {
 // Generate template needed with item list according to user's need eg. refund, out of stock..
 const generateTemplate = function (templateType) {
 
-    document.querySelector('#input-section').innerHTML = ''
-
-    if (templateType === 'refund') {
-        document.querySelector('#output').value = templateMessage.refund()
-      
-        
-    }   else if (templateType === 'outOfStock1') {
-        generateInputDOM()
+    if (templateType === 'outOfStock1') {
         document.querySelector('#output').value = templateMessage.outOfStock1(generatedList)
     }   else if (templateType === 'outOfStock2') {
-        generateInputDOM()
         document.querySelector('#output').value = templateMessage.outOfStock2(generatedList)
     }   else if (templateType === 'outOfStock3') {
-        generateInputDOM()
         document.querySelector('#output').value = templateMessage.outOfStock3(generatedList)
     }   else if (templateType === 'outOfStockCancel') {
-        generateInputDOM()
         document.querySelector('#output').value = templateMessage.outOfStockCancel(generatedList)
     }   else if (templateType === 'deliveryTimeEnquiry') {
         document.querySelector('#output').value = templateMessage.deliveryTimeEnquiry()
     }   else if (templateType === 'refundedStripe') {
         document.querySelector('#output').value = templateMessage.refundedStripe()
-    }  else if (templateType === 'itemShortageUponDelivery') {
-        generateInputDOM()
+    }   else if (templateType === 'itemShortageUponDelivery') {
         document.querySelector('#output').value = templateMessage.itemShortageUponDelivery(generatedList)
     }   else if (templateType === 'longWaitingTimeSplit') {
-        generateInputDOM()
         document.querySelector('#output').value = templateMessage.longWaitingTimeSplit(generatedList,date.value)
     }   else if (templateType === 'longWaitingTimeHold') {
         document.querySelector('#output').value = templateMessage.longWaitingTimeHold(generatedList)
@@ -104,13 +131,10 @@ const generateTemplate = function (templateType) {
     }   else if (templateType === 'topUpShippingFee') {
         document.querySelector('#output').value = templateMessage.topUpShippingFee(generatedList)
     }   else if (templateType === 'offerDiscountDefect') {
-        generateInputDOM()
         document.querySelector('#output').value = templateMessage.offerDiscountDefect(generatedList)
     }   else if (templateType === 'expiryDateNotice') {
-        generateInputDOM()
         document.querySelector('#output').value = templateMessage.expiryDateNotice(generatedList)
     }   else if (templateType === 'outOfStockNoETA') {
-        generateInputDOM()
         document.querySelector('#output').value = templateMessage.outOfStockNoETA(generatedList)
     }   else {
         console.log('error')
