@@ -65,7 +65,7 @@ Hope this works for you, and truly sorry for the inconvenience caused. Thanks.`
 Your order has been processed and awaiting fulfilment at the moment.\n
 I understand you ordered the\
 ${generatedList}\
-but unfortunately it will take us around 1 week or more to have the backorder stock comes in as we need to order it in from our supplier.\n\n\
+but unfortunately it will take us around ${date} to have the backorder stock comes in as we need to order it in from our supplier.\n\n\
 Are you able to wait for the restock shipment? \
 If it is ok, we would be glad to hold up your order to wait for the restock and arrange the earliest possible delivery slot \
 for you once we secure the stock.\n\n\
