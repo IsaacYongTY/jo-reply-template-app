@@ -4,6 +4,7 @@ let generatedList = ''
 // Declare variable
 let templateType = document.querySelector('#template-type').value
 
+// Initialization
 isInputDOMRequired()
 generateTemplate(templateType)  
 

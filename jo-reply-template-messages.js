@@ -51,20 +51,20 @@ If it is ok, we would like to continue to deliver your order to you as planned, 
 and will arrange second round of delivery for the shortage item(s) to you once we secure the stock.\n\n\
 I’m truly sorry for the inconvenience caused. Thank you!`
     },
-    longWaitingTimeSplit: function (generatedList, date) {
+    longWaitingTimeSplit: function (quantity,singleItem,date) {
         return `Hi! This is Jo from Nekojam. Thanks for shopping with us!\n\n\
 Your order has been processed and awaiting fulfilment at the moment.\n\
-I understand you ordered ${generatedList} but unfortunately it will take us around ${date} \
+I understand you ordered ${quantity}x ${singleItem} but unfortunately it will take us around ${date} \
 to have the backorder stock comes in as we need to order it in from our supplier.\n\n\
 If it is ok, we would like to dispatch the available item(s) first while we waiting the above item(s) to restock. \
 We will arrange second round delivery for you once we secure the stocks.\n\n\
 Hope this works for you, and truly sorry for the inconvenience caused. Thanks.`
     },
-    longWaitingTimeHold: function (generatedList) {
+    longWaitingTimeHold: function (quantity,singleItem,date) {
         return `Hi! This is Jo from Nekojam. Thanks for shopping with us!\n\
 Your order has been processed and awaiting fulfilment at the moment.\n
 I understand you ordered \
-${generatedList}\
+${quantity}x ${singleItem}\
 but unfortunately it will take us around ${date} to have the backorder stock comes in as we need to order it in from our supplier.\n\n\
 Are you able to wait for the restock shipment? \
 If it is ok, we would be glad to hold up your order to wait for the restock and arrange the earliest possible delivery slot \
@@ -104,13 +104,13 @@ Our account will verify it on the next working day.\n\
 Please do not forget to screenshot it as a proof and send it to me to speed up the process!\n\
 Thank you.`
     },
-    offerDiscountDefect: function (generatedList) {
+    offerDiscountDefect: function (singleItem,discount) {
         return `Hello, this is Jo from Nekojam. So sorry to bother you but I would like to notify you there’s a small defect on \
-${generatedList} that is being delivered to you this evening.\n\n\
+${singleItem} that is being delivered to you this evening.\n\n\
 While we were having your order dispatched for this evening, my storekeeper accidentally made a small damage on the packaging of the item. \
 There was no spillage and we've patched & taped up the small tear, \
 but we would like to apologise for the inconvenience and worry caused to you regarding this. \
-If you would like to keep that item, we would like to extend a 5% discount for that item. \
+If you would like to keep that item, we would like to extend a ${discount}% discount for that item. \
 If you would prefer otherwise, please let me know as well. Thank you!\n\n\
 I’ll be dispatching that item as promised this evening but should it be uncomfortable for you, \
 please let me know and I’ll arrange for a new bag to be sent to you when the supplier is able to send the goods down to us!`
@@ -132,5 +132,29 @@ Because we cannot be sure at this time when, or if, we will be able to re-stock 
 we would like to remove the item(s) from your order. The remainder of your order will be shipped and \
 you will not be charged for the cancelled item(s).\n\n\
 Please accept our apologies for this inconvenience. Thank you!`
+    },
+    returnPolicy: function () {
+    return `Regarding to the item(s) that you would like to return or make an exchange, \
+I would like to let you know our return policy, please see it via the following link:\n\
+https://nekojam.zendesk.com/hc/en-us/articles/115002994191-What-is-your-return-policy-`    
+    },
+    howToReturn: function () {
+        return `Here is how exchanges are usually conducted, please let me know if you’re okay with our rules and if you’re fine to proceed:\n\n\
+1. The unused product has to be returned in its original packaging and form within 30 days from the date of delivery to our fulfilment centre\n\
+2. Our fulfilment centre is located at 23 New Industrial Road, Solstice Business Center, #04-10 Singapore 536209. \
+Operational hours are between 9am to 6pm, Mondays to Fridays. We are not open on weekends nor public holidays\n\
+3. Should the customer be alright to proceed with an exchange, please place an order for their replacement online \
+of choice on the website and make payment in full.\n\
+4. When the replacement item is ready to be collected, an SMS will be sent and customers may head down to the fulfilment center from then on.\n\
+5. Once a member of the team has checked the original item for any defects or damages, \
+we’ll provide a refund for the original item that will be issued in the same method of payment as the original payment.\n\ `
+    },
+    delayFulfillment: function (estimatedDate) {
+        return `Hi, this is Jo from Nekojam.\n\n\
+Your order is now awaiting fulfillment currently. \
+I regret to let you know that we are unable to dispatch your order within 3 working days as \
+the restock shipment for your order has been delayed. \
+The estimated delivery date for your order will be on ${estimatedDate} \
+I hope this timing works for you and please accept my apologies for the delay. Thank you!`
     }
 }
