@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(237, 241, 242);
+    font-size: 15px;
+    font-family: Lato, "Open Sans", "Helvetica Neue", "Open Sans", Arial;
+}
+
+h1 {
+    color: rgb(38, 38, 53);
+    text-align: center;
+    font-size: 35px;
+}
+
+input, select, button, textarea {
+    font-size: 15px;
+    font-family: Lato, "Open Sans", "Helvetica Neue", Arial;
+
+}
+

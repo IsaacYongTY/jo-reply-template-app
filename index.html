@@ -3,15 +3,16 @@
 
 <html>
     <head>
-
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
     </head>
 
     <body>
         <h1>Jo Reply Template App</h1>
     
-
-    
-
+        <hr />
+        <p>Template Type:</p>
         <select id="template-type">
             <option value="outOfStock1">OOS1</option>
             <option value="outOfStock2">OOS2</option>
@@ -31,22 +32,35 @@
             <option value ="returnPolicy">Return Policy</option>
             <option value="howToReturn">How To Return</option>
             <option value="delayFulfillment">Delay Fulfillment (restock shipment delayed)</option>
-        </select><br/><br/>
-
-    
+        </select>
+        
+        <br />
+        
+        <p>Input Info:</p>
         <div id="input-section">
             
         </div>
         
-        <br/><br/>
+        <br />
         
-        Product preview:<br/>
-        <textarea id="product-preview" cols="40" rows="20" placeholder="Product preview"></textarea>
+        <p><strong>Product preview:</strong>
 
-        <textarea id="output" cols="100" rows="20"></textarea><br/>
-        <button id="generate-template">Generate</button>
-        <button id="copy">Copy</button>
-        <button id="clear">Clear</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <strong>Output:</strong></p>
+        <textarea id="product-preview" cols="40" rows="20" placeholder="Product preview"></textarea>
+        
+        &nbsp;
+        <textarea id="output" cols="100" rows="20"></textarea>
+        
+        <br /><br />
+        
+        <button id="generate-template">Generate</button>&nbsp;&nbsp;
+        <button id="copy">Copy</button>&nbsp;&nbsp;
+        <button id="clear">Clear</button>&nbsp;&nbsp;
         <button id="clear-product">Clear Product</button>
 
         <div id="product-list">
