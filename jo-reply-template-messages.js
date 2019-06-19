@@ -63,7 +63,7 @@ Hope this works for you, and truly sorry for the inconvenience caused. Thanks.`
     longWaitingTimeHold: function (generatedList) {
         return `Hi! This is Jo from Nekojam. Thanks for shopping with us!\n\
 Your order has been processed and awaiting fulfilment at the moment.\n
-I understand you ordered the\
+I understand you ordered \
 ${generatedList}\
 but unfortunately it will take us around ${date} to have the backorder stock comes in as we need to order it in from our supplier.\n\n\
 Are you able to wait for the restock shipment? \
