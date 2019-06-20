@@ -211,7 +211,7 @@ const generateTemplate = function (templateType) {
     }   else if (templateType === 'longWaitingTimeSplit') {
         document.querySelector('#output').value = templateMessage.longWaitingTimeSplit(quantity,singleItem,date)
     }   else if (templateType === 'longWaitingTimeHold') {
-        document.querySelector('#output').value = templateMessage.longWaitingTimeHold(generatedList)
+        document.querySelector('#output').value = templateMessage.longWaitingTimeHold(quantity,singleItem,date)
     }   else if (templateType === 'placeNewOrderAddOn') {
         document.querySelector('#output').value = templateMessage.placeNewOrderAddOn()
     }   else if (templateType === 'howToAddOnItem') {
