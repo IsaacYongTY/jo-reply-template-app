@@ -4,7 +4,7 @@
   "description": "",
   "main": "jo-reply-template-app.js",
   "scripts": {
-    "start": "node jo-reply-template-app.js"
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
