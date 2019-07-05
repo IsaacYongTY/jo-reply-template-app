@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/IsaacYongTY/jo-reply-template-app/issues"
   },
-  "homepage": "https://github.com/IsaacYongTY/jo-reply-template-app#readme"
+  "homepage": "https://github.com/IsaacYongTY/jo-reply-template-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
