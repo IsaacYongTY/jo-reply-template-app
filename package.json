@@ -1,0 +1,20 @@
+{
+  "name": "jo-reply-template-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jo-reply-template-app.js",
+  "scripts": {
+    "start": "node jo-reply-template-app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaacYongTY/jo-reply-template-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaacYongTY/jo-reply-template-app/issues"
+  },
+  "homepage": "https://github.com/IsaacYongTY/jo-reply-template-app#readme"
+}

@@ -242,19 +242,3 @@ const copyText = function () {
     document.execCommand('copy')
     copyText.blur()
 }
-
-
-// <input id="product-name" type="text" placeholder="Product name" value="">
-    
-// <input id="date" placeholder="ETA/Expiry date" value = "no ETA">
-
-// <button id="add-to-list">Add to list</button>
-
-// <select id="quantity">
-// <option>1</option>
-// <option>2</option>
-// <option>3</option>
-// <option>4</option>
-// <option>5</option>
-// <option>6</option>
-// </select>
